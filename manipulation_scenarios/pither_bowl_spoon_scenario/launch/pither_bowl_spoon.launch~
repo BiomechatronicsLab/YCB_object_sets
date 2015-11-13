@@ -1,0 +1,10 @@
+<launch>
+
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="paused" value="true"/>
+	</include>
+	<node name="spawn_table" pkg="gazebo_ros" type="spawn_model" args="-file $(find ycb_object_models)/models/urdf/table.urdf -urdf -z 0.01 -model table" respawn="false" output="screen" />
+	<node name="spawn_mug" pkg="gazebo_ros" type="spawn_model" args="-file $(find ycb_object_models)/models/urdf/bowl.urdf -urdf -x 0.4 -y 0 -z 0.58 -model mug" respawn="false" output="screen" />
+	<node name="spawn_pitcher" pkg="gazebo_ros" type="spawn_model" args="-file $(find ycb_object_models)/models/urdf/pitcher.urdf -urdf -x 0.4 -y -0.4 -z 0.58 -Y 4 -model plate" respawn="false" output="screen" />
+        <node name="spawn_spoon" pkg="gazebo_ros" type="spawn_model" args="-file $(find ycb_object_models)/models/urdf/spoon.urdf -urdf -x 0.4 -y 0.3 -z 0.58 -model spoon" respawn="false" output="screen" />
+</launch>

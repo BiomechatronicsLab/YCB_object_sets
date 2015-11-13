@@ -1,0 +1,14 @@
+<package>
+  <description brief="pither_bowl_spoon_scenario">
+
+     pither_bowl_spoon_scenario
+
+  </description>
+  <author>yzheng</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/pither_bowl_spoon_scenario</url>
+
+</package>
+
+
